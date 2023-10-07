@@ -29,13 +29,14 @@ ball.dy = -2
 bricks = []
 
 for i in range(6):
-    for j in range(17):
+    for j in range(11):
         brick = turtle.Turtle()
         brick.speed(0)
         brick.shape('square')
+        brick.shapesize(stretch_len=2)
         brick.color(random.choice(colors))
         brick.penup()
-        brick.goto(-225 + j * 25, 250 - i * 40)
+        brick.goto(-255 + j * 50, 250 - i * 40)
         bricks.append(brick)
 
 remaining_bricks = len(bricks)
