@@ -1,6 +1,8 @@
 import turtle
 import random
 
+colors = ["blue", "red", "pink", "yellow", "green", "gray", "white", "cyan"]
+
 window = turtle.Screen()
 window.title('Breakout Game')
 window.bgcolor('black')
@@ -26,14 +28,14 @@ ball.dy = -2
 
 bricks = []
 
-for i in range(3):
-    for j in range(7):
+for i in range(6):
+    for j in range(17):
         brick = turtle.Turtle()
         brick.speed(0)
         brick.shape('square')
-        brick.color('blue')
+        brick.color(random.choice(colors))
         brick.penup()
-        brick.goto(-200 + j * 70, 200 - i * 20)
+        brick.goto(-225 + j * 25, 250 - i * 40)
         bricks.append(brick)
 
 remaining_bricks = len(bricks)
