@@ -1,7 +1,7 @@
 import turtle
 import random
 
-colors = ["blue", "red", "pink", "yellow", "green", "gray", "white", "cyan"]
+colors = ["blue", "red", "pink", "yellow", "green", "gray", "white", "cyan", "brown"]
 
 window = turtle.Screen()
 window.title('Breakout Game')
